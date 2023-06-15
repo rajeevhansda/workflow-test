@@ -25,9 +25,5 @@ jobs:
 
       - name: Run script with dotenv
         env:
-          G_TOKEN: ${{ secrets.G_T }}
-          G_OWNER: ${{ secrets.G_O }}
-          G_REPO: ${{ secrets.G_R }}
-          GMAIL_USER: ${{ secrets.G_U }}
-          GMAIL_PASSWORD: ${{ secrets.G_P }}
+          API_KEY: ${{ secrets.YOUR_VARIABLE }}
         run: node -r dotenv/config index.js
