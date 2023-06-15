@@ -30,4 +30,4 @@ jobs:
           G_REPO: ${{ secrets.G_R }}
           GMAIL_USER: ${{ secrets.G_U }}
           GMAIL_PASSWORD: ${{ secrets.G_P }}
-        run: node -r dotenv/config index.js
+        run: node -r dotenv/config -r nodemailer/index.js
