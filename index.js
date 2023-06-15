@@ -21,4 +21,4 @@ if(process.env.KEY === 'mykey'){
       }); 
 
 }
-console.log('--------END--------');
+console.log('---------END--------');
