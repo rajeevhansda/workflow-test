@@ -23,7 +23,7 @@ function sendEmail() {
   // Create a mail options object
   const mailOptions = {
     from: process.env.GMAIL_USER,
-    to: "rajeevrhansda@gmail.com",
+    to: process.env.GMAIL_RECIEVER,
     subject: "Issue tracker daily report",
     text: "Please find the attached Excel file.",
     attachments: [
