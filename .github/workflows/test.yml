@@ -3,7 +3,7 @@ name: JavaScript Workflow
 on:
   push:
     branches:
-      - main  # Replace with the branch you want to trigger the workflow on
+      - main
 
 jobs:
   build:
@@ -18,5 +18,8 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Install Dependencies
+        run: npm ci  # or 'yarn install' if you prefer yarn
+
       - name: Run JavaScript
-        run: node index.js
+        run: node path/to/your/script.js
