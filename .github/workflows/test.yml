@@ -19,7 +19,10 @@ jobs:
           node-version: '14'
 
       - name: Install Dependencies
-        run: npm ci  # or 'yarn install' if you prefer yarn
+        run: |
+          npm install
+          npm ci
+          npm run build  # Replace with the appropriate build command, if needed
 
       - name: Run JavaScript
         run: node index.js
