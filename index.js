@@ -25,4 +25,4 @@ if(apiKey === 'mykey'){
 }
 
 
-console.log('---------END--------');
+console.log('---------END---------');
