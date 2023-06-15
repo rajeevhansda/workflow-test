@@ -2,11 +2,13 @@ console.log('hello');
 const fs = require('fs'); 
 require("dotenv").config();
 
- 
+const apiKey = process.env.API_KEY;
 
  
 
-if(process.env.KEY === 'mykey'){
+ 
+
+if(apiKey === 'mykey'){
     console.log('dotenv');
     fs.appendFile('example.txt', 'FOUND DOTENV.', (err) => { 
         if (err) throw err; 
@@ -21,4 +23,6 @@ if(process.env.KEY === 'mykey'){
       }); 
 
 }
+
+
 console.log('---------END--------');
